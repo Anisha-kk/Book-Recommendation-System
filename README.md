@@ -17,7 +17,7 @@ https://zenodo.org/records/4265096
 4. Encoding of non numeric fields <br>
   4.1) For feature such as ISBN with numeric characters, convert directly to integer <br>
   4.2) For features such as genre which holds a list of values per row (For eg. Harry Potter and the Philosopher's Stone can belong to all of these genres - fiction,adventure,magic,children) use multi hot encoding <br>
-   4.3) For features with high cardinality, encoding is done by creating embeddings using the Sentence Transformer library which is buid on BERT <br>
+   4.3) For features with high cardinality, encoding is done by creating embeddings using the Sentence Transformer library which is build on BERT <br>
 5. All the encodings as well as the numeric columns (after normalising) are concatenated to create a single vector for each row
 6. Cosine Similarity function is used to find the similarity between the vectors and choose the top k similar titles for the given book.
 ## Result 
